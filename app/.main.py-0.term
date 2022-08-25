@@ -3405,4 +3405,4 @@ Traceback (most recent call last):
   File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/H.A.D.S/app/main.py", line 4, in <module>
     import pandas as pd
 ModuleNotFoundError: No module named 'pandas'
-(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ 
+(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ 
