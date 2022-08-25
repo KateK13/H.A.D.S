@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Hazardous Asteroid Detection System</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='/assets/img/canvas (12).png') }}">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                 <span class="site-heading-upper mb-3">Circuit Breakers</span>
+                <span class="site-heading-lower">H.A.D.S</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="{{ url_for('home')}}">H.A.D.S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('home')}}">Home</a></li>
+                      <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('input_model')}}">The Product</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('about')}}">Discovery</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('products')}}">Models</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('store')}}">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section about-heading">
+            <div class="container">
+                <br>
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto text-center">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Discovering the Beyond</span>
+                                    <span class="section-heading-lower">An Analysis Of Our Data</span>
+                                </h2>
+                                <p>We only strive to present the clearest of data. After we cleaned our data, we hand picked out the best to create comprehensible graphs. Below includes our scatter plots, correlation maps, and circle plots. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <section class="page-section about-heading">
+            <div class="container">
+                <br>
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h3 class="mb-0">
+                                    Correlation Matrix
+                                </h3>
+                               <br>
+                              <p>
+                                A correlation matrix is a table showing the relationship between variables. Correlation matrices are used to summarize data and as diagnostic tools for advanced analyses. A negative correlation means that the two variables have little to no relevancy to each other, whereas a positive correlation shows that the variables effect each other.
+                              </p>
+                              <br>
+                               <iframe width="625" height="650" class= "center" title="piechart1" src="{{url_for('static', filename='corr_matrix.html')}}"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <section class="page-section about-heading">
+            <div class="container">
+                <br>
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5 ">
+                                <h3 class="mb-0 ">
+                                    The Imbalance Problem
+                                </h3>
+                              <br>
+                              <p>
+                                    This pie chart shows the percentages of the non-hazardous and hazardous asteroids in the dataset we used. A problem that we encountered when building our models is that there were more data entries for the non-hazardous asteroids than the hazardous ones, causing an imbalance. This imbalance cause our accuracy metrics to lower significantly.
+                                So we decided to fix it by using the random over-sampling method, which adds more copies to the minority class (in our case, the hazardous asteroids.)
+
+
+                                  </p>
+                              <iframe width="625" height="650" class= "center" title="piechart" src="{{url_for('static', filename='unequal_pie_chart.html')}}"></iframe>
+                              <iframe width="625" height="650" class= "center" title="piechart1" src="{{url_for('static', filename='equal_pie_chart2.html')}}"></iframe>
+                              <p>
+                                    When comparing the two pie charts above, we can see that the random over-sampling method did it's job and made copies of the hazardous data until it was equal to the non-hazardous asteroids.
+                                  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+         <section class="page-section about-heading">
+            <div class="container">
+                <br>
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <br>
+                              <h3 class="mb-0 ">
+                                    Box Plots
+                              </h3>
+                                <br>
+                     <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='velocitybox.html')}}"></iframe>
+                              <p>
+                                This box plot shows us that the hazardous asteroids have a higher max, min and median than the non-hazardous asteroids.
+                              </p>
+                            <br>
+                     <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='magnitudebox.html')}}"></iframe>
+                              <p>
+                                 This box plot shows us that the hazardous asteroids have a lower max, min and median than the non-hazardous asteroids.
+                              </p>
+                                 <br>
+                              <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='missbox.html')}}"></iframe>
+                              <p>
+                               This box plot shows us that the hazardous asteroids and the non-hazardous asteroids have almost equal median, min and max when it comes to miss distance, which means it doesn't contribute to whether or not the asteroid is dangerous.
+
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<br>
+      <section class="page-section about-heading">
+            <div class="container">
+                <br>
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <br>
+                              <h3 class="mb-0 ">
+                                    Scatter Plots
+                              </h3>
+                                <br>
+                     <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='scatter_plot_min2.html')}}"></iframe>
+                              <p>
+                                The minimum diameter holds a constant correlation with the relative velocity.
+                              </p>
+                            <br>
+                     <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='scatter_plot_max2.html')}}"></iframe>
+                              <p>
+                                 The maximum diameter holds a constant correlation with the relative velocity.
+                              </p>
+                                 <br>
+                              <iframe width="625" height="650" class= "center" title="Cal" src="{{url_for('static',filename='velocitymag.html')}}"></iframe>
+                              <p>
+                                The hazardous and non-hazardous asteroids both fall into a certain range with the velocity correlation. The hazardous asteroids have about the range of [15,23] and the non-hazardous asteroid portray about a range [14,32].
+
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; H.A.D.S 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    <body>
+  </body>
+</html>

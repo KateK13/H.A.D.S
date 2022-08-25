@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--DISCOVERY-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Hazardous Asteroid Detection System</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='/assets/img/canvas (12).png') }}">
+        
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                 <span class="site-heading-upper mb-3">Circuit Breakers</span>
+                <span class="site-heading-lower">H.A.D.S</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href={{ url_for('home')}}>H.A.D.S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('home')}}">Home</a></li>
+                      <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('input_model')}}">The Product</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('about')}}">Discovery</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('products')}}">Models</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ url_for('store')}}">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      <br>
+       <section class="page-section about-heading">
+            <div class="container">
+
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+
+                                    <span class="section-heading-upper">The</span>
+                                  <span class="section-heading-lower">Overview</span>
+
+                                </h2>
+                              <p>
+                               Our team initially tested 9 models, and the 4 below were the most promising ones. All 4 mostly had accuracy metrics in the high 90% and the confusion matrices had a majority of true positives and true negatives.
+We also tested the Gradient Boosting Classifier, Bernoulli model, Gaussian model, Support Vector Machines, and Logistic Regression, but their metrics were not up to the standards.
+
+                              </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-upper">Model 1</span>
+                                <span class="section-heading-lower">Decision Trees</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static',filename='/assets/img/trees.png') }}" alt="..."  width =1000px height= 600px class= "center">
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">Decision trees are flowchart tree like structures where a system uses a series of questions to assign a classification. We ended up using this model for our final product. </p>
+                      <ul>
+  	 	                        <li>Accuracy: 97.08%</li>
+  	                         	<li>Precision: 94.48%</li>
+  	 	                        <li>Recall: 99.97%</li>
+  	 	                        <li>F1: 97.15%</li>
+  	                 </ul> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-upper">Model 2</span>
+                                <span class="section-heading-lower">K Nearest Neighbors</span>
+                            </h2>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <img src="{{ url_for('static',filename='/assets/img/neighbor.jpg') }}" alt="..." width =1000px height= 600px  class= "center">
+
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">KNN is a non-parametric method used for classification that works by selecting the specified number of examples (K-Neighbors) closest to the query, and then votes for the most frequent label based on the neighbors.</p>
+                       <ul>
+  	 	                        <li>Accuracy: 90.05%</li>
+  	                         	<li>Precision: 83.46%</li>
+  	 	                        <li>Recall: 99.78%</li>
+  	 	                        <li>F1: 90.89%</li>
+  	                 </ul>
+                      </div>
+                    </div>
+                </div>
+            
+        </section>
+        <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-upper">Model 3</span>
+                                <span class="section-heading-lower">Random Forest Classifier</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static',filename='/assets/img/forest.jpeg') }}" alt="..." width =1000px height= 600px  class= "center">
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">The Random Forest an unsupervised model that uses multiple decision trees and chooses certain prediction by means of voting.</p>
+                          <ul>
+  	 	                        <li>Accuracy: 96.87%</li>
+  	                         	<li>Precision: 99.98%</li>
+  	 	                        <li>Recall: 94.09%</li>
+  	 	                        <li>F1: 96.95%</li>
+  	                 </ul></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex">
+                        <div class="bg-faded p-5 d-flex ms-auto rounded">
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-upper">Model 4</span>
+                                <span class="section-heading-lower">XGBoost</span>
+                            </h2>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <img src="{{ url_for('static',filename='/assets/img/R.png') }}" alt="..." width =1000px height= 600px  class= "center">
+
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">XGBoost stands for eXtreme Gradient Boosting. An XGB merges weak tree models together to make stronger, cohesive, comprehensive data that is more easily read.
+</p>
+                       <ul>
+  	 	                        <li>Accuracy: 90.05%</li>
+  	                         	<li>Precision: 83.51%</li>
+  	 	                        <li>Recall: 99.69%</li>
+  	 	                        <li>F1: 90.89%</li>
+  	                 </ul>
+                      </div>
+                    </div>
+                </div>
+            
+        </section>
+<section class="page-section about-heading">
+            <div class="container">
+              <br>
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                  <span class="section-heading-lower text-center"><strong>Confusion Matrices</strong></span>
+                                </h2>
+                              <h3>
+                              <p>
+                               &emsp;&emsp;&emsp;&emsp;Decision Trees &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; KNN
+
+                              </p>
+                                  </h3>
+                              &emsp;<img src="{{ url_for('static',filename='/assets/img/treematrix.png') }}" alt="..." width =400px height= 300px>
+                              <span>&emsp;&ensp;</span>
+                             &emsp;<img src="{{ url_for('static',filename='/assets/img/knnmatrix.png') }}" alt="..." width =400px height= 300px>
+                              <br>
+                              <br>
+                              <h3>
+
+                              <p>
+                               &emsp;&emsp;Random Forest Classifier&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; XGBoost
+                              </p>
+                                  </h3>
+                              &emsp;<img src="{{ url_for('static',filename='/assets/img/randmatrix.png') }}" alt="..." width =400px height= 300px>
+                              <span>&emsp;&ensp;</span>
+                              &emsp;<img src="{{ url_for('static',filename='/assets/img/xgbmatrix.png') }}" alt="..." width =400px height= 300px>
+                                  <br>
+                              <p>
+                                 Confusion matrices are one of the many methods we use to confirm whether or not a model is sufficient. The goal is to have a high number in the True Positive (Top-Left) and True Negative (Bottom-Right) boxes, because these values were correctly predicted. The other two boxes contain the number of incorrect predictions.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <br>
+
+
+
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; H.A.D.S 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+<strong></strong>

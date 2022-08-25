@@ -1,0 +1,58 @@
+(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ python3 main.pu[Ky
+Try to open
+
+    https://cocalc19.ai-camp.dev/51a0ae70-7868-42c5-a7b9-2953e02c5d84/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/H.A.D.S/app/main.py", line 40, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/flask/app.py", line 914, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 991, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ (base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ python3 [K[K[K[K[K[K[K[Kpython [K3 main.py
+Try to open
+
+    https://cocalc19.ai-camp.dev/51a0ae70-7868-42c5-a7b9-2953e02c5d84/port/12347/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/H.A.D.S/app/main.py", line 40, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/flask/app.py", line 914, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 991, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ python3 main.py
+Try to open
+
+    https://cocalc19.ai-camp.dev/51a0ae70-7868-42c5-a7b9-2953e02c5d84/port/12347/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/H.A.D.S/app/main.py", line 40, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/flask/app.py", line 914, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/51a0ae70-7868-42c5-a7b9-2953e02c5d84/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 991, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ (base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ [K(base) ]0;~/H.A.D.S/app[01;34m~/H.A.D.S/app[00m$ 
